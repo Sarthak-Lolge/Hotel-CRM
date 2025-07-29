@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+
+    <header class="navigation">
+      <ul class="logo-txt">
+        <li><h2>StayEase</h2></li>
+        
+        <div class="navigate">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="start.html">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </div>
+        <div class="sign-div">
+          <button
+            class="admin-login-btn"
+            onclick="window.location.href='user-login.html'">
+            User Login
+          </button>
+         
+          <button
+            class="admin-login-btn"
+            onclick="window.location.href='Admin-login.html'">
+            Admin Login
+          </button>
+        </div>
+
+      </ul>
+    </header>
+
+    <section class="form">
+
+      <div class="form-container">
+
+        <div class="login-info">
+         
+          <form action="user-login" method="" class="login-credentials">
+            <h1>User Login</h1>
+            <label>Username</label>
+            <input type="text" name="username" required/>
+            <label>Password</label>
+            <input type="password" name="password"required/>
+            <input type="submit" value="Login" class="submit">
+            <a href="./user-signup.html">Sign up</a>
+          </form>
+        </div>
+
+        <div class="login-img">
+          <img src="./images/login.jpg">
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <i class="fa-regular fa-copyright"></i><p>Hotel CRM. Made by <a href="#">Sarthak Lolge</a></p>
+    </footer>
+
+  </body>
+</html>

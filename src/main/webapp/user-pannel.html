@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel CRM Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+    
+ button.back-user{
+    margin-top: 200%;
+    margin-right: 15px;
+    margin-left: 45px;
+    padding: 10px 50px;
+  }
+ </style>
+<body>
+    <div class="sidebar">
+        <h2>User Pannel</h2>
+        <ul>
+
+            <li><a href="#" id="user-rooms-li">Bookings</a></li>
+           
+            <li><a href="user-login.html" id="user-profile-li">Logout </a></li>
+            <!-- <li><a href="#" id="report-li">Reports & Analytics</a></li> -->
+            
+        </ul>
+        
+        <a href="index.html" ><button class="back-user">Back</button></a>
+    </div>
+
+    <div class="main-content">
+
+      <section class="user-booking">
+        <header>
+          <h1>Hotel Rooms Booking</h1>
+        </header>
+        <div class="ac-nonac">
+          <div class="card" onclick="window.location.href='hotel_booking.html'">
+            Click Here To Book Hotel
+          </div>
+       </div>
+      </section>
+
+
+
+      <section class="user-invoices">
+        <header>
+          <h1>Payments & Invoices</h1>
+        </header>
+        <div class="ac-nonac">
+          <div class="card">
+            <h3>Generate Invoice</h3>
+            <p>(Generate Bills)</p>
+          </div>
+          <!-- <div class="card">
+            <h3>Invoice List</h3>
+            <p> (View all payments and pending invoices)</p>
+          </div> -->
+       </div>
+      </section>
+
+      <section class="user-profile">
+
+      </section>
+    </div>
+
+    <script language="javascript">
+      user_room_li=document.getElementById("user-rooms-li");
+      user_invoice_li = document.getElementById("user-invoice-li");
+      user_profile_li = document.getElementById("user-profile-li");
+
+      document.querySelector(".user-booking").style.display="block";
+      document.querySelector(".user-invoices").style.display="none";
+      document.querySelector(".user-profile").style.display="none";
+
+      user_room_li.addEventListener("click",()=>{
+        document.querySelector(".user-booking").style.display="block";
+        document.querySelector(".user-invoices").style.display="none";
+        document.querySelector(".user-profile").style.display="none";
+      })
+
+      user_invoice_li.addEventListener("click",()=>{
+        document.querySelector(".user-booking").style.display="none";
+        document.querySelector(".user-invoices").style.display="block";
+        document.querySelector(".user-profile").style.display="none";
+      })
+      
+      user_profile_li.addEventListener("click",()=>{
+        document.querySelector(".user-booking").style.display="none";
+        document.querySelector(".user-invoices").style.display="none";
+        document.querySelector(".user-profile").style.display="block";
+      })
+      
+    </script>
+</body>
+</html>

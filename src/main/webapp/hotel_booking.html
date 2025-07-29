@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        .booking-section{
+        background-image: url(./images/backimg2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    </style>
+  </head>
+  <body>
+
+    <a href="./user-pannel.html" class="back-button">Back</a>
+    <section class="booking-section">
+      <div class="hotel-booking-container">
+        <h2>Hotel Booking Form</h2>
+        <form action="url" method="POST">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Enter First Name" required />
+
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name" />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required />
+
+          <label for="email">Email ID:</label>
+          <input type="email" id="email" name="email" placeholder="Enter Email id" required />
+
+          <label for="room-type">Room Type:</label>
+		     <input type="text" id="room-type" name="room-type" placeholder="AC/NON-AC/SINGLE/DOUBLE/SUIT" required />
+
+          <label for="check-in">Check-in Date:</label>
+          <input type="date" id="check-in" name="check-in" required />
+
+          <label for="check-out">Check-out Date:</label>
+          <input type="date" id="check-out" name="check-out" required />
+
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" name="guests" min="1" placeholder="Enter number of guests" required />
+
+          <input type="submit" value="Book Room" class="submit" >
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

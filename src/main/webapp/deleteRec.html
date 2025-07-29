@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>delete-form</title>
+<style>
+	.form-container{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		
+	}
+	button{
+		background-color:red;
+		color:white;
+		padding:7px;
+		border:none;
+		cursor:pointer;
+	}
+	input{
+		padding:5px;
+	}
+	
+	h2{
+	text-align:center;
+	}
+</style>
+</head>
+<body>
+<form action="DeleteBooking" method="post" class="form-container">
+	<div >
+	<h2>Enter the Customer Id</h2>
+    <input type="text" name="customer_id" >  <!-- Dynamic ID -->
+    <button type="submit" class="del">Delete Booking</button>
+    </div>
+	
+</form>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+
+    <header class="navigation">
+      <ul class="logo-txt">
+        <!-- <div class="txt"> -->
+          <li><h2>Hotel CRM</h2></li>
+          <div class="sign-div"> 
+            <button class="admin-login-btn">User Login</button>
+            <button class="admin-login-btn" onclick="window.location.href='Admin-login.html'">Admin Login</button> 
+          </div>
+            
+        <!-- </div> -->
+      </ul>
+    </header>
+
+    <div class="form">
+    <div class="form-container-signup">
+      <h2>Sign Up</h2>
+      <form action="user-signup" method="POST" class="login-credentials">
+    
+          <input type="text" name="name" placeholder="Enter Full Name" >
+          <input type="email" name="email" placeholder="Enter Email" >
+          <input type="text" name="username" placeholder="Enter Username" >
+          <input type="password" name="password" placeholder="Enter Password" >
+          <input type="tel" name="mobileno" placeholder="Enter Mobile Number" >
+          <input type="submit" value="Sign Up" class="submit">
+           <p>Already have account? <a href="./user-login.html">Login</a></p>
+      </form>
+  </div>
+</div>
+    <footer>
+      <i class="fa-regular fa-copyright"></i><p>Hotel CRM. Made by <a href="#">Sarthak Lolge</a></p>
+    </footer>
+
+  </body>
+</html>
